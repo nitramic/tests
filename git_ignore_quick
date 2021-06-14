@@ -1,0 +1,23 @@
+Git Ignore easy
+
+1) list files which we want to ignore
+
+$ git status
+.idea/xyz.xml
+.idea/pqr.iml
+Output
+.DS_Store
+
+2) Copy the content of step#1 and append it into .gitignore file.
+
+$echo "
+.idea/xyz.xml
+.idea/pqr.iml
+Output
+.DS_Store" >> .gitignore
+
+3) Validate
+$ git status
+.gitignore
+
+likewise we can add directory and all of its sub dir/files which we want to ignore in git status using directoryname/* and I executed this command from src directory.
